@@ -11,12 +11,24 @@
     "semi": ["error", "always"],
     "quotes": ["error", "double"],
     "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/no-explicit-any": 1,
+    "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-inferrable-types": [
-      "warn", {
+      "warn",
+      {
         "ignoreParameters": true
       }
     ],
-    "@typescript-eslint/no-unused-vars": "warn"
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/ban-ts-comment": [
+      "off",
+      {
+        "ts-expect-error": true,
+        "ts-ignore": false,
+        "ts-nocheck": true,
+        "ts-check": false
+      }
+    ],
+    "@typescript-eslint/ban-ts-ignore": "off"
   }
 }

@@ -1,2 +1,4 @@
-export { default as user } from "./user";
-export { default as general } from "./general";
+import user from "./user";
+import general from "./general";
+
+export default { user, general };

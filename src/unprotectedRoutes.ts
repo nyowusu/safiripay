@@ -1,9 +1,10 @@
 import Router from "@koa/router";
-import { general } from "./controller";
+import controller from "./controller";
 
 const unprotectedRouter = new Router();
 
 // Hello World route
-unprotectedRouter.get("/", general.helloWorld);
+unprotectedRouter.get("/", controller.general.main);
+unprotectedRouter.get("/api/health", controller.general.health);
 
 export { unprotectedRouter };
