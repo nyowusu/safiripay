@@ -75,7 +75,7 @@
     "koa-swagger-decorator": "^1.5.16",
     "pg": "^7.12.1",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.24",
+    "typeorm": "^0.2.25",
     "winston": "^3.2.1"
   }
 }
